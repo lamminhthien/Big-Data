@@ -30,11 +30,11 @@ for line in sys.stdin:
         current_count += count
     else:
         if current_word: # nếu gặp từ mới thì in ra số lần xuất hiện của từ đang xét
-            print('%stest1\t%s' % (current_word, current_count))
+            print('%s\t%s' % (current_word, current_count))
         # sau đó chuyển sang xử lý từ mới
         current_count = count
         current_word = word
 
 # in ra từ cuối cùng
 if current_word == word:
-    print('%stest1\t%s' % (current_word, current_count))
+    print('%s\t%s' % (current_word, current_count))

@@ -1,0 +1,14 @@
+# Dừng toàn bộ dịch vụ của haddop
+stop-all.sh
+# Cấp quyền cho thư mục gốc của hdfs
+hdfs dfs -chmod -R 777 /
+# Khởi động lại hadoop, yarn
+start-all.sh
+# Kiểm tra các dịch vụ của hadoop đã chạy hay chưa
+jps
+# Output hiện tương tự như vầy là ok
+18433 SecondaryNameNode
+18853 NodeManager
+18694 ResourceManager
+18010 NameNode
+19581 Jps
