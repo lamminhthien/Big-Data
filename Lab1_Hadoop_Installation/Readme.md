@@ -83,6 +83,11 @@ Thiết lập quyền truy cập đến khóa ssh:
 chmod 0600 ~/.ssh/authorized_keys
 ```
 
+Khởi động ssh (Ubuntu WSL)
+```shell
+sudo service ssh start
+```
+
 Kiểm tra việc cài đặt bằng lệnh sau:
 
 ```shell
