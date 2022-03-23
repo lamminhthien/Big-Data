@@ -14,4 +14,4 @@ for line in sys.stdin.buffer.raw:
     words = line.split()
     # đưa ra thiết bị xuất chuẩn các cặp <word, 1>, cách nhau bằng ký tự tab
     for word in words:
-        print('%s\t%s' % (word, 1))
+        print('%s test 1 \t%s' % (word, 1))
