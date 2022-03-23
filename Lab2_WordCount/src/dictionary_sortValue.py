@@ -21,3 +21,5 @@ if current_word:
 	print('yes')
 else:
 	print('no')
+
+print('Hello VSCode SSH from Shared Folder with VMWareTool to use github')
