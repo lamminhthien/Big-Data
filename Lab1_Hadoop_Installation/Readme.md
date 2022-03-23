@@ -231,7 +231,7 @@ Bổ sung các khai báo sau:
         <value>/app/hadoop/tmp</value>
     </property>
     <property>
-        <name>fs.defaultFS</name>
+        <name>fs.defaultFS.name</name>
         <value>hdfs://localhost:9000</value>
     </property>
 </configuration>
