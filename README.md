@@ -2,6 +2,7 @@
 
 ### [Nguyễn Đình Hưng](https://nd-hung.github.io/)
 ### Khoa Công nghệ thông tin, Trường đại học Nha Trang
+Test Github vscode ubuntu
 ---
 
 ### [Lab 1: Hadoop Installation](https://github.com/nd-hung/Big-Data/tree/main/Lab1_Hadoop_Installation)
