@@ -83,11 +83,6 @@ Thiết lập quyền truy cập đến khóa ssh:
 chmod 0600 ~/.ssh/authorized_keys
 ```
 
-Khởi động ssh (Ubuntu WSL):
-```shell
-sudo service ssh start
-```
-
 Kiểm tra việc cài đặt bằng lệnh sau:
 
 ```shell
@@ -236,7 +231,7 @@ Bổ sung các khai báo sau:
         <value>/app/hadoop/tmp</value>
     </property>
     <property>
-        <name>fs.defaultFS.name</name>
+        <name>fs.defaultFS</name>
         <value>hdfs://localhost:9000</value>
     </property>
 </configuration>
