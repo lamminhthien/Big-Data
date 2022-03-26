@@ -4,8 +4,12 @@
 from operator import itemgetter
 import sys
 
-current_id = None
-follow_count = 1
+
+# Chứa các cặp theo dõi lẫn nhau
+mutual_followers = []
+# Chứa tất cả cặp theo dõi
+pair_followers = []
+
 
 
 # Lấy dữ liệu từ thiết bị nhập chuẩn
@@ -14,22 +18,13 @@ for line in sys.stdin:
     line = line.strip()
     # (Chú ý: Ở file reducer.py cặp <id1, id2> xuất ra với ký tự phân cách tab) 
     id1,id2 = line.split('\t',1)
-    # Vì cuối pha mapper, các cặp <key,value> đã được sắp xếp thứ tự theo key là id1 nên , ta cộng dồn lượt xuất hiện của các id1 
-        # giống nhau đó để thống kê số lượng người theo dõi của mỗi tài khoản
-    if current_id == id1:
-        follow_count = follow_count + 1
-    # Gặp id1 mới thì in ra số lượt follow của tài khoản đó
-    else:
-        if current_id:
-            print(f'User {current_id} follow {follow_count} peoples')
-            # Bắt đầu sang xử lý id mới
-        current_id = id1
-        follow_count = 1
-
-# In số lượng follow của id1 cuối cùng
-if current_id == id1:
-    print(f'User {current_id} follow {follow_count} peoples')
+    # Vì cuối pha mapper, các cặp <key,value> đã được sắp xếp thứ tự theo key là id1 nên
+    pair_followers.append((id1,id2))
+    # Từ cặp thứ hai trở đi, ta sẽ kiểm tra xem cặp tài khoản đó có phải là mutal follower hay không
+    if len(pair_followers) != 0:
+        # Nếu (id2,id1) hiện tại khớp với bất kì (id1,id2) nào trong pair_followers thì ta thêm vào mutual_followers
+        if (id2,id1) in pair_followers:
+            mutual_followers.append((id2,id1))
     
-        
 
 
