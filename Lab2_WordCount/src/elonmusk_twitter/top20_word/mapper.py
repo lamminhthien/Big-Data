@@ -17,4 +17,4 @@ for line in sys.stdin.buffer.raw:
     id,created_at,text = line.split(b',',2)
     # Tùy theo yêu cầu xử lý, ta chọn loại dữ liệu hợp lý để xuất cặp <key,value>
     # ở đây chỉ cần text mà thôi
-    print(f'{text}\t1')
+    print('%s\t%s' % (text,1))

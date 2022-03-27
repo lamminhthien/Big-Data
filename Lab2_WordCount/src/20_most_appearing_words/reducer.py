@@ -50,4 +50,5 @@ word_counts_sorted = dict(sorted(word_counts.items(),key=lambda x:x[1],reverse=T
 
 # In bang dictonary
 for w in list(word_counts_sorted)[0:20]:
-    print(f'{w} \t {word_counts_sorted[w]} ')
+    # print(f'{w} \t {word_counts_sorted[w]} ')
+    print('%s\t%s' % (w,word_counts_sorted[w]))
