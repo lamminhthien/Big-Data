@@ -16,5 +16,12 @@ for line in sys.stdin.buffer.raw:
     # print(type(line.split(b',')))
     id,created_at,text = line.split(b',',2)
     # Tùy theo yêu cầu xử lý, ta chọn loại dữ liệu hợp lý để xuất cặp <key,value>
-    # ở đây chỉ cần text mà thôi
-    print('%s\t%s' % (text,1))
+    # ở đây chỉ cần text mà thôi, ta sẽ tách từ trong từng dòng text ra nữa
+    # print('%s\t%s' % (text,1))
+    # loại bỏ ký tự trắng ở đầu và cuối chuỗi
+    text_sequence = text.strip()
+    # tách ra thành các từ
+    words = text_sequence.split()
+    # đưa ra thiết bị xuất chuẩn các cặp <word, 1>, cách nhau bằng ký tự tab
+    for word in words:
+        print('%s\t%s' % (word, 1))

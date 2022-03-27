@@ -31,7 +31,7 @@ for line in sys.stdin:
     # Vì vậy ở pha Reduce, chương trình sẽ cộng giá trị value của dãy liên tiếp các từ trùng nhau
     # cho đến khi gặp từ mới.
     if word == current_word: # nếu từ mới trùng với từ đang xét thì tăng giá trị đếm của từ đang xét
-        print(word)
+        # print(word)
         current_count += count
     else:
         if current_word: # nếu gặp từ mới thì in ra số lần xuất hiện của từ đang xét
@@ -50,4 +50,6 @@ word_counts_sorted = dict(sorted(word_counts.items(),key=lambda x:x[1],reverse=T
 
 # In bang dictonary
 for w in list(word_counts_sorted)[0:20]:
+    # print('Thien')
+    # print(f'---{w} \t {word_counts_sorted[w]}---')
     print('%s\t%s' % (w,word_counts_sorted[w]))
