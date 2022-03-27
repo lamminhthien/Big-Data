@@ -26,5 +26,8 @@ for line in sys.stdin:
         if (id2,id1) in pair_followers:
             mutual_followers.append((id2,id1))
     
+# In danh sách mutual ra
+for pair in mutual_followers:
+    print(pair)
 
 
