@@ -16,8 +16,10 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file
 # Thống kê số lượng người theo dõi của từng tài khoản
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file mapper.py -mapper mapper.py  -file reducer.py -reducer reducer.py  -input /user/hdoop/data/twitter/twitter_following.txt  -output /user/hdoop/data/twitter_count-follower -cmdenv LC_CTYPE=vi_VN.UTF-8
 
+# Bài thời tiết lab 3
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file mapper.py -mapper mapper.py  -file reducer.py -reducer reducer.py  -input /user/hdoop/data/lab3/ncdc/preprocessed  -output /user/hdoop/data/lab3/ncdc/ncdc-output -cmdenv LC_CTYPE=vi_VN.UTF-8
 
-
+ hdfs dfs -cat /user/hdoop/data/lab3/ncdc/ncdc-output/part-00000 > ncdc-output.txt
 
 hdfs dfs -mkdir -p data/lab3
 
