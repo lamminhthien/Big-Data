@@ -1,12 +1,9 @@
+pip install sklearn
 pip install pandas
 pip install pyspark
-pip install networkx
-pip install operator
 pip install matplotlib
-pip install mpld3
 pip install reverse_geocoder
-pip install shutil
-pip install glob
-pip install pprint
-pip install sklearn
+pip install mpld3
+pip install operator
+pip install networkx
 pip install ipykernel
