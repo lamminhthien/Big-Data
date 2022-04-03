@@ -19,6 +19,8 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file
 # Bài thời tiết lab 3
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file mapper.py -mapper mapper.py  -file reducer.py -reducer reducer.py  -input /user/hdoop/data/lab3/ncdc/preprocessed  -output /user/hdoop/data/lab3/ncdc/ncdc-output -cmdenv LC_CTYPE=vi_VN.UTF-8
 
+# Bài thời tiết lab 3 tính max, min average
+
  hdfs dfs -cat /user/hdoop/data/lab3/ncdc/ncdc-output/part-00000 > ncdc-output.txt
 
 hdfs dfs -mkdir -p data/lab3
