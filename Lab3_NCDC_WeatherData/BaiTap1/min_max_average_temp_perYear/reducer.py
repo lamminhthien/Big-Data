@@ -2,10 +2,11 @@
 
 import sys
 
+sum = 0
+count = 0
+
 (last_key, max_val,min_val) = (None, -sys.maxsize,sys.maxsize)
 for line in sys.stdin:
-  sum = 0
-  count = 0
   (key, val) = line.strip().split("\t")
   sum = sum + int(val)
   count = count + 1
