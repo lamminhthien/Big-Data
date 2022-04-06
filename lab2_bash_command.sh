@@ -19,6 +19,10 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file
 # Bài thời tiết lab 3
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file mapper.py -mapper mapper.py  -file reducer.py -reducer reducer.py  -input /user/hdoop/data/ncdc  -output /user/hdoop/data/ncdc-output3 -cmdenv LC_CTYPE=vi_VN.UTF-8
 
+# Xử lý tọa độ của bài lab 3
+/mnt/d/Code/Big-Data/Lab3_NCDC_WeatherData/BaiTap/max_latitude_longtitude_per_year
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file mapper.py -mapper mapper.py  -file reducer.py -reducer reducer.py  -input /user/hdoop/data/ncdc  -output /user/hdoop/data/ncdc-output-latitude-longtitude -cmdenv LC_CTYPE=vi_VN.UTF-8
+
 # Bài thời tiết lab 3 tính max, min average
 
  hdfs dfs -cat /user/hdoop/data/lab3/ncdc/ncdc-output/part-00000 > ncdc-output.txt

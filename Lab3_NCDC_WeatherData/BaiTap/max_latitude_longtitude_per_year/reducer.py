@@ -6,9 +6,13 @@ current_longtitude = None
 
 (last_key, max_val) = (None, -sys.maxsize)
 for line in sys.stdin:
-  (key,val,latitude,longtitude) = line.strip().split("\t")
+  # date, time, year, temp, latitude, longtitude
+  (date,time,key, val,latitude,longtitude) = line.strip().split("\t")
+  print(date,time,key,val,latitude,longtitude)
   if last_key and last_key != key:
-    print("%s\t%s\t%s\t%s" % (last_key, max_val,int(latitude)/1000,int(longtitude)/1000))
+    print("%s\t%s\t%s\t%s\t%s\t%s" % (last_key, max_val,
+          int(latitude)/1000,int(longtitude)/1000,date,time)
+        )
     (last_key, max_val) = (key, int(val))
     (current_latitude, current_longtitude) = (latitude,longtitude)
   else:
@@ -16,4 +20,6 @@ for line in sys.stdin:
     (current_latitude,current_longtitude) = (latitude,longtitude)
 
 if last_key:
-  print("%s\t%s\t%s\t%s" % (last_key, max_val,int(latitude)/1000,int(longtitude)/1000))
+  print("%s\t%s\t%s\t%s\t%s\t%s" % (last_key, max_val,
+          int(latitude)/1000,int(longtitude)/1000,date,time)
+        )
