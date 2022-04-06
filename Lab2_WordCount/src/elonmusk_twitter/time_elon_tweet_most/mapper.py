@@ -10,7 +10,7 @@ import sys
 
 for line in sys.stdin.buffer.raw:
     # loại bỏ ký tự trắng ở đầu và cuối chuỗi
-    line = line.strip()
+    # line = line.strip()
     # Bỏ dòng đầu tiên
         # Đang nghĩ cách tối ưu
     # tách ra thành id, created_at và text, chúng được ngăn cách nhau bởi dấu ,

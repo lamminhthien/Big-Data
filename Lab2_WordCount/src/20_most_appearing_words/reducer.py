@@ -17,7 +17,7 @@ for line in sys.stdin:
     # loại bỏ ký tự trắng ở đầu và cuối chuỗi
     line = line.strip()
 
-    # tách ra thành cặp <word, 1> (Chú ý: Ở file reducer.py cặp <word, 1> xuất ra với ký tự phân cách tab)
+    # tách ra thành cặp <b'thien', 1> (Chú ý: Ở file reducer.py cặp <word, 1> xuất ra với ký tự phân cách tab)
     word, count = line.split('\t', 1)
 
     # chuyển giá trị count thành kiểu số
@@ -31,7 +31,7 @@ for line in sys.stdin:
     # Vì vậy ở pha Reduce, chương trình sẽ cộng giá trị value của dãy liên tiếp các từ trùng nhau
     # cho đến khi gặp từ mới.
     if word == current_word: # nếu từ mới trùng với từ đang xét thì tăng giá trị đếm của từ đang xét
-        print(word)
+        # print(word)
         current_count += count
     else:
         if current_word: # nếu gặp từ mới thì in ra số lần xuất hiện của từ đang xét

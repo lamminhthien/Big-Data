@@ -11,7 +11,8 @@ for line in sys.stdin:
   sum = sum + int(val)
   count = count + 1
   if last_key and last_key != key:
-    print("%s\t%s\t%s\t%s" % (last_key, max_val, min_val, round(sum/count)))
+    #print("%s_%s_%s_%s" % (last_key, max_val, min_val, round(sum/count)))
+    print(f"{last_key}\t{max_val}\t{min_val}\t{round(sum/count)}")
     (last_key, max_val, min_val) = (key, int(val), int(val))
     sum = 0
     count = 0
@@ -19,4 +20,4 @@ for line in sys.stdin:
     (last_key, max_val, min_val) = (key, max(max_val, int(val)), min(min_val, int(val)))
 
 if last_key:
-  print("%s\t%s\t%s\t%s" % (last_key, max_val, min_val,round(sum/count)))
+  print(f"{last_key}\t{max_val}\t{min_val}\t{round(sum/count)}")
