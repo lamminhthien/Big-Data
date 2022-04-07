@@ -4,22 +4,21 @@ import sys
 current_latitude = None
 current_longtitude = None
 
-(last_key, max_val) = (None, -sys.maxsize)
+(last_year, max_temp) = (None, -sys.maxsize)
 for line in sys.stdin:
-  # date, time, year, temp, latitude, longtitude
-  (date,time,key, val,latitude,longtitude) = line.strip().split("\t")
-  print(date,time,key,val,latitude,longtitude)
-  if last_key and last_key != key:
-    print("%s\t%s\t%s\t%s\t%s\t%s" % (last_key, max_val,
+  # (date, time, year, temp, latitude, longtitude))
+  (date, time, year, temp, latitude, longtitude) = line.strip().split("\t")
+  if last_year != None and last_year != year:
+    print("%s\t%s\t%s\t%s\t%s\t%s" % (last_year, max_temp,
           int(latitude)/1000,int(longtitude)/1000,date,time)
         )
-    (last_key, max_val) = (key, int(val))
+    (last_year, max_temp) = (year, int(temp))
     (current_latitude, current_longtitude) = (latitude,longtitude)
   else:
-    (last_key, max_val) = (key, max(max_val, int(val)))
+    (last_year, max_temp) = (year, max(max_temp, int(temp)))
     (current_latitude,current_longtitude) = (latitude,longtitude)
 
-if last_key:
-  print("%s\t%s\t%s\t%s\t%s\t%s" % (last_key, max_val,
+if last_year:
+  print("%s\t%s\t%s\t%s\t%s\t%s" % (last_year, max_temp,
           int(latitude)/1000,int(longtitude)/1000,date,time)
         )
