@@ -30,3 +30,6 @@ hdfs dfs -mkdir -p data/lab3
 
 hdfs dfs -chmod -R 777 /user/hdoop/data
 
+# Bài 2 top 5 tài khoản được theo dõi nhiều nhất
+
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar  -file mapper.py -mapper mapper.py  -file reducer.py -reducer reducer.py  -input /user/hdoop/data/twitter  -output /user/hdoop/data/top5-tai-khoan-duoc-theo-doi-6
