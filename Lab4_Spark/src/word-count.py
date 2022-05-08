@@ -14,14 +14,9 @@ if __name__ == "__main__":
 	# count the occurrence of each word
 	wordFrequencies = words.map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
 
-	# Sort the result decreasing by number count of word
-	wordFrequencies = wordFrequencies.sortBy(lambda x:x[1],ascending=False)
-
 	# save the set of <word, frequency> to disk
-	savingPath = "/home/hdoop/gutenberg-result-pyspark"
+	savingPath = "/home/hdoop/pyspark-output"
 
-	# if os.path.isdir(savingPath):
-	#     shutil.rmtree(savingPath, ignore_errors=True)
-	# wordFrequencies.saveAsTextFile(savingPath)
-	print(wordFrequencies)
-
+	if os.path.isdir(savingPath):
+	    shutil.rmtree(savingPath, ignore_errors=True)
+	wordFrequencies.saveAsTextFile(savingPath)
