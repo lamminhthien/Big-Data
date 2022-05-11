@@ -49,7 +49,7 @@ if current_word == word:
 word_counts_sorted = dict(sorted(word_counts.items(),key=lambda x:x[1],reverse=True))
 
 # In bang dictonary
-for w in list(word_counts_sorted)[0:20]:
+for w in list(word_counts_sorted)[0:10]:
     # print('Thien')
     # print(f'---{w} \t {word_counts_sorted[w]}---')
     print('%s\t%s' % (w,word_counts_sorted[w]))

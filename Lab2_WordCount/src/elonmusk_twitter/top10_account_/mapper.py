@@ -23,5 +23,7 @@ for line in sys.stdin.buffer.raw:
     # tách ra thành các từ
     words = text_sequence.split()
     # đưa ra thiết bị xuất chuẩn các cặp <word, 1>, cách nhau bằng ký tự tab
+    # Chỉ lấy các từ có chữ @ đầu tiên ví dụ @LamMinhThien
     for word in words:
-        print('%s\t%s' % (word, 1))
+        if word.decode('ASCII')[0] == b'@'.decode('ASCII'):
+            print('%s\t%s' % (word.decode('ASCII'), 1))
