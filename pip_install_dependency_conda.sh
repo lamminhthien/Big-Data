@@ -7,3 +7,4 @@ pip install mpld3
 pip install operator
 pip install networkx
 pip install ipykernel
+conda install -c anaconda jupyter

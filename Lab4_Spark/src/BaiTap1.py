@@ -10,14 +10,15 @@ except:
 
 
 # create Spark context with necessary configuration
+# Lệnh này tương đương pyspark trong terminal
 sc = SparkContext("local", "Text processing with PySpark Example")
 
 # read data from text file into lines  
 lines = sc.textFile("/mnt/d/Code/Big-Data/Lab4_Spark/src/apache_log.log").cache()
 
 # # Filter lines contain 'error' and count
-# errorLinesCount = lines.filter(lambda s: 'error' in s).count()
-# print('There are'+ str(errorLinesCount) + 'contain error')
+errorLinesCount = lines.filter(lambda s: 'error' in s).count()
+print('There are'+ str(errorLinesCount) + 'contain error')
 
 # Print lines contain 'error' 
 for element in lines.filter(lambda s: 'error' in s).collect():
