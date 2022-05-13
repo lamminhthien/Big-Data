@@ -5,6 +5,15 @@ minh họa:
 4. Trình bày các cách tiếp cận chính hiện nay để xử lý dữ liệu lớn.
 5. Trình bày vắn tắt các đặc điểm chính của Hadoop. Nêu các ưu điểm, nhược điểm chính
 của Hadoop.
+![image](https://user-images.githubusercontent.com/99172799/168300427-bc56d61c-bc71-4ccf-8637-7e234cc1b16a.png
+![image](https://user-images.githubusercontent.com/99172799/168300606-235e43e7-0a23-44ef-9014-acb14687b966.png)
+https://data-flair.training/blogs/13-limitations-of-hadoop/
+**Nhược điểm**
+![image](https://user-images.githubusercontent.com/99172799/168300922-7649c13d-747a-47a7-bf2e-25822941190e.png)
+![image](https://user-images.githubusercontent.com/99172799/168301152-91cc6db1-301a-499e-bb94-93abfc63d2e2.png)
+![image](https://user-images.githubusercontent.com/99172799/168301211-300c443f-e849-4507-aaba-c9e5c7caddb7.png)
+![image](https://user-images.githubusercontent.com/99172799/168301393-4be1028b-5cab-4e04-856d-f0defb1054d7.png)
+![image](https://user-images.githubusercontent.com/99172799/168301505-2e21a70d-bdd5-454f-b678-83bb16367c8b.png)
 
 6. Trình bày vắn tắt các thành phần chính của Hadoop.
 ![image](https://user-images.githubusercontent.com/99172799/168297826-60bc381a-1475-4ab6-8d14-e7f7f1e3e5f1.png)
