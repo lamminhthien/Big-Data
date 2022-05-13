@@ -10,7 +10,10 @@ của Hadoop.
 MapReduce.
 8. Trình bày các đặc điểm chính của nền tảng Apache Spark.
 9. Trình bày các điểm khác biệt chính trong mô hình xử lý của Spark so với MapReduce.
-10. Trình bày các thành phần chính của nền tảng Apache Spark.
+![image](https://user-images.githubusercontent.com/99172799/168297133-14c41c7f-bbe1-4c8e-b9ae-6bf714ab831c.png)
+![image](https://user-images.githubusercontent.com/99172799/168297180-7da81eee-9798-42e4-9761-ee552c5af619.png)
+![image](https://user-images.githubusercontent.com/99172799/168297214-4f68f23d-87ed-4480-8da4-f6db7d7444f4.png)
+11. Trình bày các thành phần chính của nền tảng Apache Spark.
     - Apache Spark Core
         - Là hệ thống cốt lõi thực thi tổng quát, **làm cơ sở xây dựng các chức năng khác**.
         - Cung cấp tính năng tính toán trong bộ nhớ (In-Memory computing) và tham chiếu dữ liệu trên bộ nhớ ngoài.
