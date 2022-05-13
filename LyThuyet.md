@@ -1,9 +1,16 @@
 1. Nêu các đặc trưng cơ bản của dữ liệu lớn. Với mỗi đặc trưng hãy nêu ví dụ thực tế để
 minh họa:
+![image](https://user-images.githubusercontent.com/99172799/168302966-d7902d2a-9d2d-48ae-a182-9323af3f84b3.png)
+![image](https://user-images.githubusercontent.com/99172799/168303032-7514980b-8ea0-4cdb-b7fb-ad37f4099142.png)
+![image](https://user-images.githubusercontent.com/99172799/168303164-1d2b212f-8aba-4b1a-9e12-e4778a4cdb50.png)
+![image](https://user-images.githubusercontent.com/99172799/168303245-19a54844-ccc7-4243-81ea-14ea9a2ba7dc.png)
 2. Nêu các lợi ích của xử lý dữ liệu lớn. Nêu ví dụ thực tế minh họa.
-3. Nêu các thách thức khi xử lý dữ liệu lớn.
-4. Trình bày các cách tiếp cận chính hiện nay để xử lý dữ liệu lớn.
-5. Trình bày vắn tắt các đặc điểm chính của Hadoop. Nêu các ưu điểm, nhược điểm chính
+![image](https://user-images.githubusercontent.com/99172799/168303299-850753ce-1246-4cd7-92fa-c827bee5ac3e.png)
+![image](https://user-images.githubusercontent.com/99172799/168303343-e8041a67-561f-4e22-9160-b5e1b24b270a.png)
+4. Nêu các thách thức khi xử lý dữ liệu lớn.
+![image](https://user-images.githubusercontent.com/99172799/168303403-6537ba88-5d59-444e-9f36-8d32a0eda8cd.png)
+6. Trình bày các cách tiếp cận chính hiện nay để xử lý dữ liệu lớn.
+7. Trình bày vắn tắt các đặc điểm chính của Hadoop. Nêu các ưu điểm, nhược điểm chính
 của Hadoop.
 ![image](https://user-images.githubusercontent.com/99172799/168300427-bc56d61c-bc71-4ccf-8637-7e234cc1b16a.png
 ![image](https://user-images.githubusercontent.com/99172799/168300606-235e43e7-0a23-44ef-9014-acb14687b966.png)
