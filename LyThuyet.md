@@ -11,6 +11,24 @@ của Hadoop.
 ![image](https://user-images.githubusercontent.com/99172799/168298044-9e3abcea-832a-4f10-9693-8ca40daa71e5.png)
 7. Mô tả mô hình lập trình MapReduce. Trình bày vắn tắt luồng xử lý dữ liệu trong
 MapReduce.
+## Giải pháp Big Data: Hadoop <a name="bigdata_approach"/>
+
+Nền tảng Hadoop cho phép triển khai các ứng dụng xử lý dữ liệu lớn (hàng TB) song song trên các cụm (cluster) lên đến hàng ngàn máy tính với độ tin cậy và khả năng chịu lỗi cao.
+### Luồng xử lý của Hadoop MapReduce
+Mô hình MapReduce chia tác vụ xử lý thành 2 pha: map và reduce. Với mỗi pha xử lý cần có 1 chương trình tương ứng: mapper và reducer. Cần phải lập trình mapper và reducer để xử lý theo yêu cầu bài toán.
+#### Map
+Khi bắt đầu xử lý, dữ liệu vào sẽ được chia nhỏ thành nhiều phần, mỗi phần được gửi đến một máy trạm riêng biệt. Mỗi máy trạm thực thi chương trình mapper trên phần dữ liệu nhận được.
+Chương trình mapper đọc dữ liệu vào và chuyển thành các cặp <key, value>.
+Giá trị của <key, value> do người lập trình xác định tùy theo yêu cầu bài toán. 
+Ví dụ, với bài toán đếm từ, cặp <key, value> là <word, count>. Với mỗi từ đọc được, chương trình mapper xuất ra cặp giá trị <word, 1>. Các cặp <word, 1> sẽ được gộp và nhóm lại, những cặp <word, 1> giống nhau sẽ được nhóm lại và gửi đến một máy trạm riêng lẻ để xử lý ở pha reduce.
+<br>
+#### Reduce
+Chương trình reducer xử lý các cặp <key, value> và rút gọn chúng theo cách mong muốn. 
+Ví dụ, để đếm số lần xuất hiện của mỗi từ, chương trình reducer sẽ cộng giá trị của tất cả các cặp <word, 1> trùng nhau.
+
+| <img src="figs/MapReduce.png" width="70%"/> | 
+|:--:| 
+| Minh họa giải quyết bài toán đếm từ với mô hình MapReduce. *Image source: https://bit.ly/3gfU6te* |
 ![image](https://user-images.githubusercontent.com/99172799/168297743-89c52639-ffc2-4f62-98f8-fc5407b13cfb.png)
 8. Trình bày các đặc điểm chính của nền tảng Apache Spark.
 ![image](https://user-images.githubusercontent.com/99172799/168297573-8ccf974a-f9e5-494a-a511-d9af59b48577.png)
