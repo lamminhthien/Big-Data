@@ -1,19 +1,19 @@
-1. Nêu các đặc trưng cơ bản của dữ liệu lớn. Với mỗi đặc trưng hãy nêu ví dụ thực tế để
-minh họa:
+**1. Nêu các đặc trưng cơ bản của dữ liệu lớn. Với mỗi đặc trưng hãy nêu ví dụ thực tế để
+minh họa:**
 ![image](https://user-images.githubusercontent.com/99172799/168302966-d7902d2a-9d2d-48ae-a182-9323af3f84b3.png)
 ![image](https://user-images.githubusercontent.com/99172799/168303032-7514980b-8ea0-4cdb-b7fb-ad37f4099142.png)
 ![image](https://user-images.githubusercontent.com/99172799/168303164-1d2b212f-8aba-4b1a-9e12-e4778a4cdb50.png)
 ![image](https://user-images.githubusercontent.com/99172799/168303245-19a54844-ccc7-4243-81ea-14ea9a2ba7dc.png)
-2. Nêu các lợi ích của xử lý dữ liệu lớn. Nêu ví dụ thực tế minh họa.
+**2. Nêu các lợi ích của xử lý dữ liệu lớn. Nêu ví dụ thực tế minh họa.**
 ![image](https://user-images.githubusercontent.com/99172799/168303299-850753ce-1246-4cd7-92fa-c827bee5ac3e.png)
 ![image](https://user-images.githubusercontent.com/99172799/168303343-e8041a67-561f-4e22-9160-b5e1b24b270a.png)
-3. Nêu các thách thức khi xử lý dữ liệu lớn.
+**3. Nêu các thách thức khi xử lý dữ liệu lớn.**
 ---
 ![image](https://user-images.githubusercontent.com/99172799/168303403-6537ba88-5d59-444e-9f36-8d32a0eda8cd.png)
-4. Trình bày các cách tiếp cận chính hiện nay để xử lý dữ liệu lớn.
+**4. Trình bày các cách tiếp cận chính hiện nay để xử lý dữ liệu lớn.**
 ![image](https://user-images.githubusercontent.com/99172799/168303946-0672f95c-8804-4472-91d5-ad012fb276ae.png)
 
-5. Trình bày vắn tắt các đặc điểm chính của Hadoop. Nêu các ưu điểm, nhược điểm chính
+**5. Trình bày vắn tắt các đặc điểm chính của Hadoop. Nêu các ưu điểm, nhược điểm chính**
 của Hadoop.
 ![image](https://user-images.githubusercontent.com/99172799/168300427-bc56d61c-bc71-4ccf-8637-7e234cc1b16a.png
 ![image](https://user-images.githubusercontent.com/99172799/168300606-235e43e7-0a23-44ef-9014-acb14687b966.png)
@@ -25,11 +25,11 @@ https://data-flair.training/blogs/13-limitations-of-hadoop/
 ![image](https://user-images.githubusercontent.com/99172799/168301393-4be1028b-5cab-4e04-856d-f0defb1054d7.png)
 ![image](https://user-images.githubusercontent.com/99172799/168301505-2e21a70d-bdd5-454f-b678-83bb16367c8b.png)
 
-6. Trình bày vắn tắt các thành phần chính của Hadoop.
+**6. Trình bày vắn tắt các thành phần chính của Hadoop.**
 ![image](https://user-images.githubusercontent.com/99172799/168297826-60bc381a-1475-4ab6-8d14-e7f7f1e3e5f1.png)
 ![image](https://user-images.githubusercontent.com/99172799/168297869-ace6d226-8d23-4327-b722-30650e8f5907.png)
 ![image](https://user-images.githubusercontent.com/99172799/168298044-9e3abcea-832a-4f10-9693-8ca40daa71e5.png)
-7. Mô tả mô hình lập trình MapReduce. Trình bày vắn tắt luồng xử lý dữ liệu trong
+**7. Mô tả mô hình lập trình MapReduce. Trình bày vắn tắt luồng xử lý dữ liệu trong**
 MapReduce.
 ## Giải pháp Big Data: Hadoop <a name="bigdata_approach"/>
 
