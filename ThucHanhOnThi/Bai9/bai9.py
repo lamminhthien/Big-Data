@@ -12,6 +12,7 @@ for line in lines.collect():
     year = line[15:19]
     date = line[15:23]
     temp = line[87:92]
+    q = line[92:93]
     
     if last_year != None and last_year != year:
          print("%s\t%s\t%s" % (last_year, date,max_temp))
@@ -19,7 +20,7 @@ for line in lines.collect():
     else:
         last_year = year
         temp_integer = int(temp)
-        if (temp_integer > max_temp):
+        if (temp_integer > max_temp and (temp_integer != 9999 and re.match("[01459]",q))):
             max_temp = temp_integer
             date_when_max_temp = date
 
