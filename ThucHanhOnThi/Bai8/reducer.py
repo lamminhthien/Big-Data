@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-'''reducer.py'''
-
 import sys
 
 (last_year, max_temp) = (None, -sys.maxsize)

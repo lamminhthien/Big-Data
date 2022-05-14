@@ -4,7 +4,7 @@ import sys
 (current_latitude,current_longtitude) = (None,None)
 (last_year, max_temp) = (None, -sys.maxsize)
 for line in sys.stdin:
-  (year,temp,latitude,longtitude) = line.strip().split("\t")
+  (year,temp,latitude,longtitude) = line.strip().split("\t",3)
   if last_year != None and last_year != year:
     print("%s\t%s\t%s\t" % (last_year,int(latitude)/1000,int(longtitude)/1000))
     (last_year, max_temp) = (year, int(temp))

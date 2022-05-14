@@ -7,7 +7,7 @@ sc = SparkContext("local", "Text processing with PySpark Example")
 
 (date_when_max_temp,max_temp) = (None,-sys.maxsize)
 (current_date, last_year) = (None,None)
-lines = sc.textFile("/mnt/e/HỌC/BT-Bigdata/Big-Data-main/Lab3_NCDC_WeatherData/data/preprocessed/1902.txt").cache()
+lines = sc.textFile("/mnt/c/Big-Data/Lab3_NCDC_WeatherData/data/preprocessed/*.txt").cache()
 for line in lines.collect():
     year = line[15:19]
     date = line[15:23]
@@ -20,7 +20,7 @@ for line in lines.collect():
     else:
         last_year = year
         temp_integer = int(temp)
-        if (temp_integer > max_temp and (temp_integer != 9999 and re.match("[01459]",q))):
+        if (temp_integer > max_temp and (temp != "+9999" and re.match("[01459]",q))):
             max_temp = temp_integer
             date_when_max_temp = date
 

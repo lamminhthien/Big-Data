@@ -19,4 +19,4 @@ for line in sys.stdin:
     last_key = key
 
 if last_key:
-  print(f"{last_key}\t{}\t{}\t{round(sum/count)}")
+  print(f"{last_key}\t{round(sum/count)}")
