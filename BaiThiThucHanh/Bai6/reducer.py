@@ -10,6 +10,7 @@ for line in sys.stdin:
   if current_year != None and current_year != year:
     print("%s\t Ngay %s Thang %s" % (current_year,date_have_max_temperature[6:8],date_have_max_temperature[4:6]))
     (current_year, max_temperature) = (year, int(temperature))
+    date_have_max_temperature = date
   else:
     # (current_year, max_temperature) = (year, max(max_temperature, int(temperature)))
     current_year = year
@@ -22,4 +23,4 @@ for line in sys.stdin:
 
 # In ra kết quả cho năm cuối cùng:
 if current_year:
-  print("%s\t Ngay %s Thang %s" % (current_year, date_have_max_temperature[-1:-2],date_have_max_temperature[-3:-4]))
+  print("%s\t Ngay %s Thang %s" % (current_year,date_have_max_temperature[6:8],date_have_max_temperature[4:6]))
