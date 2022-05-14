@@ -4,7 +4,7 @@
 from operator import itemgetter
 import sys
 
-word_here, word = None # Từ đang xét và từ bình thường (word)
+word_here, word = (None, None) # Từ đang xét và từ bình thường (word)
 word_count = 0 # Đếm từ
 
 # lấy dữ liệu từ thiết bị nhập chuẩn
